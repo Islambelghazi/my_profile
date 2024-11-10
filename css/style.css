@@ -1,0 +1,276 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+*{
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      box-sizing: border-box;  
+      font-family: 'poppines',sans-serif;    
+
+}
+header{
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    border: 2px greenyellow solid;
+}
+.my-photo{
+    width: 3%;
+    left: 0px;
+}
+.logo{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.navegation a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding-left: 30px;
+}
+.navegation a:hover{
+    color: greenyellow;
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/pexels-pixabay-33045.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main h2{
+    color: aliceblue;
+    font-size: 1.5em;
+    font-weight: 700;
+
+}
+.main h2 span{
+    display: inline-block;
+    color: greenyellow;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-color:whitesmoke;
+}
+.main h3{
+    color: whitesmoke;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+.main-botton{
+    color: black;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 900;
+    letter-spacing: 1px;
+    background-color: greenyellow;
+    display: inline-block;
+    padding: 0.9375em;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+.main-botton:hover{
+    background-color: green;
+    transform: scale(1.1);
+}
+.social-icon a{
+    color: whitesmoke;
+    font-size: 1.8em;
+    padding-right: 50px;
+    padding: 38px;
+    transition: 0.7s ease;
+}
+.social-icon a :hover{
+    transform: scale(1.1);
+
+}
+.title{
+display: flex;
+justify-content: center;
+color: green;
+letter-spacing: 1px;
+font-size: 2.2em;
+font-weight: 800;
+padding-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    width: 21em;
+    box-shadow: 0 5px 25px rgba(1,1,1,15%);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 25px;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: green;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.icon{
+    color:greenyellow;
+    font-size: 8em;
+    text-align: center;
+}
+.acount{
+    background-color: #000016;
+}
+.project.content{
+margin-top: 30px;
+}
+.project-card{
+background-color: whitesmoke;
+border: 1px solid whitesmoke;
+min-height: 15em;
+width: 16em;
+overflow: hidden;
+border-radius: 15px;
+margin: 15px;
+transition: 0.7s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-photo{
+    opacity: 0.9;
+}
+.project-photo img{
+    width: 100%;
+}
+.project-info{
+    padding: 1em;
+}
+.project-cat{
+    font-size: 0.8em;
+    color: #000;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 400;
+    margin-top: 10px;
+}
+.more-details{
+    text-decoration: none;
+    color: green;
+    text-transform: uppercase;
+}
+.more-details:hover{
+    color: greenyellow;
+}
+.footer{
+    background-color: #000;
+    color: white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-info{
+    font-size: 1.3em;
+}
+.footer .social-icon a{
+    font-size: 1.2em;
+    padding: 0 18px 0 0;
+}
+.cards .myphoto{
+  width: 8%;
+position: absolute;
+right: 20px;
+bottom: 20px;
+transition: 0.7s ease;
+}
+.cards .myphoto:hover{
+    opacity: 0.6;
+    transform: scale(1.2);
+}
+.cards{
+    position: relative;
+}
+.contente{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+@media (max-width:1023px){
+    .header{
+        padding: 20px 20px 0 0;
+    }
+    .navegation{
+        font-weight: 900;
+        font-size: 1em;
+        padding-left: 60px;
+    }
+    .logo{
+position: absolute;
+left: 0;
+
+    }
+    .title{
+        font-size: 1.8em;
+    }
+    .main{
+
+        background-repeat: no-repeat;
+      background-size: 180%;
+      background-position:left;
+          
+    }
+   .main-infor{
+    position: absolute;
+    left: 40px;
+   }
+   .info{
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 900;
+   }
+   .card{
+    width: 20em;
+    padding: 50px;
+    margin: 20px;
+       }
+       .icon{
+        font-size: 8em;
+       }
+.email{
+    font-size: 0.7em;
+    font-weight: 900;
+}
+.contente{
+    flex-direction: column;
+    justify-content: center;   
+}
+.project-card{
+   position: relative;
+   right: 130px;
+}
+
+}
